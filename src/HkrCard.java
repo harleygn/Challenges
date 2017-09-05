@@ -23,7 +23,7 @@ public class HkrCard {
         return String.valueOf(total);
     }
     public static ArrayList<Integer> evenPosList (String cardTest) {
-        ArrayList evenList = new ArrayList<Integer>();
+        ArrayList<Integer> evenList = new ArrayList<>();
         for (int i = 1; i < cardTest.length(); i += 2) {
             evenList.add(Character.getNumericValue(cardTest.charAt(i)));
         }
