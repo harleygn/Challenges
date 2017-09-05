@@ -32,12 +32,10 @@ public class HkrCard {
     public static ArrayList<Integer> evenListMultiply (ArrayList<Integer> listToMultiply) {
         ArrayList<Integer> multipliedList = new ArrayList<>();
         for (Integer valueToMultiply : listToMultiply) {
-            if (valueToMultiply.length())
             multipliedList.add(valueToMultiply * 2);
         }
         return multipliedList;
     }
-    public static
 
 
 }

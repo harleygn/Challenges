@@ -1,8 +1,6 @@
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 public class HkrCardTest {
     @Test
@@ -45,8 +43,8 @@ public class HkrCardTest {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(4);
         expected.add(8);
-        expected.add(3);
-        expected.add(7);
+        expected.add(12);
+        expected.add(16);
         expected.add(0);
         ArrayList actual = HkrCard.evenListMultiply(input);
 
