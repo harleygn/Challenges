@@ -80,7 +80,7 @@ public class HkrCardTest {
         expected.add(6);
         expected.add(2);
         expected.add(1);
-        ArrayList<Integer> actual = HkrCard.evenListMultiply(input);
+        ArrayList<Integer> actual = HkrCard.doubleDigitsSum(input);
 
         assertEquals(expected, actual);
     }
