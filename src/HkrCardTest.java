@@ -84,4 +84,20 @@ public class HkrCardTest {
 
         assertEquals(expected, actual);
     }
+    @Test
+    public void listSumTest () {
+        ArrayList<Integer> input = new ArrayList<>();
+        input.add(5);
+        input.add(1);
+        input.add(4);
+        input.add(5);
+        input.add(9);
+        input.add(6);
+        input.add(2);
+        input.add(1);
+        String expected = "33";
+        String actual = HkrCard.listSum(input);
+
+        assertEquals(expected, actual);
+    }
 }

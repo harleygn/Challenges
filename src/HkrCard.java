@@ -11,10 +11,10 @@ public class HkrCard {
         StringBuilder sb = new StringBuilder(stringToReverse);
         return sb.reverse().toString();
     }
-    public static String oddSum (String cardTest) {
+    public static String oddSum (String stringToSum) {
         int total = 0;
-        for (int i = 0; i < cardTest.length(); i += 2) {
-            char character = cardTest.charAt(i);
+        for (int i = 0; i < stringToSum.length(); i += 2) {
+            char character = stringToSum.charAt(i);
             int value = Character.getNumericValue(character);
             total += value;
         }
@@ -43,6 +43,13 @@ public class HkrCard {
             summedDigits.add(digitsToSum);
         }
         return summedDigits;
+    }
+    public static String listSum (ArrayList<Integer> evenList) {
+        int total = 0;
+        for (int value : evenList) {
+            total += value;
+        }
+        return Integer.toString(total);
     }
 
 
