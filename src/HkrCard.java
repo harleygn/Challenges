@@ -3,8 +3,10 @@ import java.util.ArrayList;
 public class HkrCard {
 
     public static void main(String[] args) {
-        String cardTest = "9795526789839145";
-        System.out.print(doubleDigitsSum(evenListMultiply(evenPosList(cardTest))));
+        String cardTest = "6301982162016598";
+        String inputA = oddSum(reverse(cardTest));
+        String inputB = listSum(doubleDigitsSum(evenListMultiply(evenPosList(cardTest))));
+        System.out.print(checksum(inputA, inputB));
     }
 
     public static String reverse (String stringToReverse) {
@@ -51,6 +53,12 @@ public class HkrCard {
         }
         return Integer.toString(total);
     }
-
+    public static String checksum (String inputA, String inputB) {
+        if ((Integer.parseInt(inputA) + Integer.parseInt(inputB) % 10) == 0) {
+            return "Yes";
+        } else {
+            return "No";
+        }
+    }
 
 }
