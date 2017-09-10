@@ -100,4 +100,13 @@ public class HkrCardTest {
 
         assertEquals(expected, actual);
     }
+    @Test
+    public void checksumTest () {
+        String inputA = "58";
+        String inputB = "33";
+        String expected = "9795526789839145";
+        String actual = HkrCard.checksum(inputA, inputB);
+
+        assertEquals(expected, actual);
+    }
 }
